@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/*---- RESETEO ---*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*---- INDEX ----*/
+/*---- HEADER ----*/
+
+header{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #5e6266;
+    position: sticky;
+    top: 0%;
+}
+ header img {
+    width: 75px;
+    height: 75x;
+    margin-left: 25px;
+    padding: 5px;
+}
+header nav {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+header nav ul li{
+    display: inline-block;
+    margin: 15px;
+    align-items: flex-end;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+header nav ul li a:hover{
+    color: rgb(100, 188, 246);
+}
+header nav ul {
+    list-style: none;
+}
+
+/*---- PRESENTACIÓN DEL PORTFOLIO ----*/
+
+.hero {
+    width: 100%;
+    height: 70vh;
+    background-image: url("../img/desarrolloWeb.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 75px;
+}
+.hero div{
+    width: 80%;
+    text-align: center;
+}
+.hero div h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 550;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.hero div p{
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.hero div a{
+    text-decoration: none;
+    background-color: #9cddf8;
+    padding: 5px;
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+}
+.hero div a:hover{
+    background-color: rgb(68, 156, 156);
+    color: white;
+}
+/*---- BIOGRAFÍA ----*/
+
+.biografiaPrincipal{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to bottom, white, rgba(158, 153, 153, 0.646));
+    padding: 50px 30px;
+}
+.biografiaPrincipal img{
+    height: 30%;
+    width: 30%;
+    margin-left: 200px;
+    margin-right: 50px;
+}
+.biografiaPrincipal h2{
+    color: rgb(44, 44, 44);
+    text-align: left;
+    font-size: 40px;
+    font-weight: 300;
+    margin-right: 200px;
+    margin-bottom: 20px;
+}
+.biografiaPrincipal p{
+    font-size: 20px;
+    font-weight: 100;
+    margin-right: 200px;
+}
+
+/*---- ÚLTIMOS PROYECTOS ----*/
+
+.ultimosProyectos{
+    width: 100%;
+    height: 600px;
+    padding: 30px;
+    margin-bottom: 100px;
+    background-image: linear-gradient(to top, white, rgb(158, 153, 153, 0.646));
+}
+.ultimosProyectos h2{
+    color: rgb(44, 44, 44);
+    text-align: left;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.ultimosProyectosFlex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.ultimosProyectosFlex div{
+    text-align: center;
+    background-color: #d9d9d9;
+    width: 450px;
+    height: 475px;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+.ultimosProyectosFlex div h3{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.ultimosProyectosFlex div img{
+    width: 450px;
+    height: 350px;
+    margin-bottom: 13px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.ultimosProyectosFlex div a{
+    text-decoration: none;
+    background-color: #9cddf8;
+    color: black;
+    border-radius: 3px; 
+    padding: 7px;
+}
+.ultimosProyectosFlex div a:hover{
+    background-color: rgb(68, 156, 156);
+    color: white;
+}
+
+/*---- FOOTER ----*/
+
+footer{
+    background-color: rgb(76, 76, 85);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+/*---- MAPA GOOGLE ----*/
+
+footer iframe{
+    width: 300px;
+    height: 80px;
+padding: 5px;
+}
+footer div a img{
+    height: 35px;
+    width: 35px;
+    transition: 0.5s;
+}
+footer div a img:hover{
+    transform: scale(1.2);
+}
+footer ul li{
+    display: inline-block;
+    margin: 15px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+footer ul li a:hover{
+    color: rgb(100, 188, 246);
+}
+
+/*---- PROYECTOS ----*/
+/*---- PROYEXTOS TÍTULO ----*/
+
+.proyectosTitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    border-bottom: solid black 1px;
+}
+
+.proyectosTitulo div{
+    width: 100%;
+    text-align: center;
+}
+.proyectosTitulo div h1{
+    color: gray;
+    font-size: 50px;
+    font-weight: 550;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+.proyectosTitulo div p{
+    color: black;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/*---- LAST PROJECT ----*/
+
+.lastProject{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.lastProject img{
+    height: 40%;
+    width: 40%;
+    margin-right: 50px;
+    margin-left: 18%;
+}
+.lastProject h2{
+    color: gray;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.lastProject p{
+    font-size: 20px;
+    font-weight: 100;
+    width: 50%;
+}
