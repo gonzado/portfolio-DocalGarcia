@@ -25,7 +25,7 @@ header{
 }
  header img {
     width: 75px;
-    height: 75x;
+    height: 75px;
     margin-left: 25px;
     padding: 5px;
 }
@@ -34,6 +34,7 @@ header nav {
     width: 100%;
     display: flex;
     justify-content: end;
+    margin-right: 30px;
 }
 header nav ul li{
     display: inline-block;
@@ -109,10 +110,11 @@ header nav ul {
     padding: 50px 30px;
 }
 .biografiaPrincipal img{
-    height: 30%;
-    width: 30%;
-    margin-left: 200px;
+    height: 40%;
+    width: 40%;
+    margin-left: 15%;
     margin-right: 50px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 .biografiaPrincipal h2{
     color: rgb(44, 44, 44);
@@ -139,7 +141,7 @@ header nav ul {
 }
 .ultimosProyectos h2{
     color: rgb(44, 44, 44);
-    text-align: left;
+    text-align: center;
     font-size: 40px;
     font-weight: 300;
     margin-bottom: 20px;
@@ -147,7 +149,7 @@ header nav ul {
 .ultimosProyectosFlex{
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 .ultimosProyectosFlex div{
     text-align: center;
@@ -158,6 +160,7 @@ header nav ul {
     margin-bottom: 20px;
     border-radius: 10px;
     margin-right: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .ultimosProyectosFlex div h3{
     color: black;
@@ -172,6 +175,7 @@ header nav ul {
     margin-bottom: 13px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    padding: 10px;
 }
 .ultimosProyectosFlex div a{
     text-decoration: none;
@@ -179,6 +183,7 @@ header nav ul {
     color: black;
     border-radius: 3px; 
     padding: 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .ultimosProyectosFlex div a:hover{
     background-color: rgb(68, 156, 156);
@@ -224,34 +229,32 @@ footer ul li a:hover{
 }
 
 /*---- PROYECTOS ----*/
-/*---- PROYEXTOS TÍTULO ----*/
+/*---- PROYECTOS CABECERA ----*/
 
-.proyectosTitulo{
+.proyectosCabecera{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 40vh;
     background-color: white;
-    margin-bottom: 100px;
-    margin-top: 20px;
     border-bottom: solid black 1px;
+    background-image: url(../img/portadaProyectos.jpeg);
 }
-
-.proyectosTitulo div{
+.proyectosCabecera div{
     width: 100%;
     text-align: center;
 }
-.proyectosTitulo div h1{
-    color: gray;
+.proyectosCabecera div h1{
+    color: #fff;
     font-size: 50px;
     font-weight: 550;
     text-align: center;
     margin-bottom: 15px;
     margin-top: 50px;
 }
-.proyectosTitulo div p{
-    color: black;
+.proyectosCabecera div p{
+    color: #fff;
     text-align: center;
     font-size: 22px;
     font-weight: 300;
@@ -264,13 +267,15 @@ footer ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    background-image: linear-gradient(to bottom, white, rgba(158, 153, 153, 0.646));
+    height: 650px;
 }
 .lastProject img{
-    height: 40%;
-    width: 40%;
+    height: 70%;
+    width: 70%;
     margin-right: 50px;
-    margin-left: 18%;
+    margin-left: 200px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .lastProject h2{
     color: gray;
@@ -283,4 +288,235 @@ footer ul li a:hover{
     font-size: 20px;
     font-weight: 100;
     width: 50%;
+}
+
+/*---- FOTOGRAFÍA ----*/
+/*---- FOTOGRAFÍA CABECERA ----*/
+
+.fotografiaCabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+    margin-bottom: 50px;
+    border-bottom: solid black 1px;
+    background-image: url(../img/portadaProyectos.jpeg);
+}
+.fotografiaCabecera div{
+    width: 100%;
+    text-align: center;
+}
+.fotografiaCabecera div h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 550;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+.fotografiaCabecera div p{
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+/*---- GRID DE FOTOGRAFÍAS ----*/
+.gridGaleria{
+    width: 100%;
+    margin-bottom: 75px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 400px;
+    gap: 20px;
+    padding: 30px;
+}
+.gridGaleria div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.imagen1{
+    grid-column: span 2;
+}
+.imagen5{
+    grid-column: span 2;
+}
+.imagen9{
+    grid-column: span 2;
+}
+.imagen10{
+    grid-column: span 2;
+}
+
+/*---- CONTACTO ----*/
+/*---- CONTACTO CABECERA ----*/
+
+.contactoCabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+    margin-bottom: 50px;
+    border-bottom: solid black 1px;
+    background-image: url(../img/portadaProyectos.jpeg);
+}
+.contactoCabecera div{
+    width: 100%;
+    text-align: center;
+}
+.contactoCabecera div h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 550;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+.contactoCabecera div p{
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/*---- CONTACTO ----*/
+/*---- SOBRE MI CABECERA ----*/
+
+.sobremiCabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+    margin-bottom: 50px;
+    border-bottom: solid black 1px;
+    background-image: url(../img/portadaProyectos.jpeg);
+}
+.sobremiCabecera div{
+    width: 100%;
+    text-align: center;
+}
+.sobremiCabecera div h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 550;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+.sobremiCabecera div p{
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/*---- MEDIAS QUERIES ----*/
+@media screen and (max-width: 1455px){
+    .ultimosProyectos{
+        width: 100%;
+        height: 1050px;
+        padding: 30px;
+        margin-bottom: 100px;
+        background-image: linear-gradient(to top, white, rgb(158, 153, 153, 0.646));
+    }
+    .ultimosProyectos h2{
+        color: rgb(44, 44, 44);
+        text-align: center;
+        font-size: 40px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    .ultimosProyectosFlex{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 1165px){
+    .biografiaPrincipal img{
+        height: 40%;
+        width: 40%;
+        margin-left: 15%;
+        margin-right: 50px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    }
+    .biografiaPrincipal h2{
+        color: rgb(44, 44, 44);
+        text-align: left;
+        font-size: 40px;
+        font-weight: 300;
+        margin-right: 200px;
+        margin-bottom: 20px;
+    }
+    .biografiaPrincipal p{
+        font-size: 20px;
+        font-weight: 100;
+        margin-right: 200px;
+    }
+}
+@media screen and (max-width: 1100px){
+.biografiaPrincipal{
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-image: linear-gradient(to bottom, white, rgba(158, 153, 153, 0.646));
+    padding: 50px 30px;
+}
+.biografiaPrincipal img{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    align-items: center;
+    margin: 0px;
+    margin-top: 40px;
+    height: 50%;
+    width: 50%;
+}
+.biografiaPrincipal h2{
+    color: rgb(44, 44, 44);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+.biografiaPrincipal p{
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    margin: 0px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+}
+@media screen and (max-width: 990px){
+    .ultimosProyectos{
+        width: 100%;
+        height: 1550px;
+        padding: 30px;
+        margin-bottom: 100px;
+        background-image: linear-gradient(to top, white, rgb(158, 153, 153, 0.646));
+    }
+}
+@media screen and (max-width: 990px){
+    .biografiaPrincipal img{
+        height: 60%;
+        width: 60%;
+}
+@media screen and (max-width: 670px){
+    footer iframe {
+        display: none;
+    }
+    .biografiaPrincipal img{
+        height: 70%;
+        width: 70%;
 }
