@@ -1,0 +1,42 @@
+@import url(../base/_variables.scss);
+
+/*---- FOOTER ----*/
+footer{
+    background-color: rgb(76, 76, 85);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    iframe{
+        width: 300px;
+        height: 80px;
+        padding: 5px;
+    }
+    div{
+        a{
+            img{
+                height: 35px;
+                width: 35px;
+                transition: 0.5s;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+    ul{
+        li{
+            display: inline-block;
+            margin: 15px;
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 15px;
+                font-weight: 300;
+                &:hover{
+                    color: rgb(100, 188, 246);
+                }
+            }
+        }
+    }
+}
