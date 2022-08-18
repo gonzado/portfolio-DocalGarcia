@@ -1,8 +1,12 @@
-@import url(../base/_variables.scss);
+@import "../base/_variables.scss";
+@import "../base/maps";
+@import "../base/extends";
+@import "../base/mixins";
+@import "../base/generales";
 
 header{
     nav{
-        background-color: #8bd6f6;
+        background-color: #1C3879;
     }
 }
 .logoDev{

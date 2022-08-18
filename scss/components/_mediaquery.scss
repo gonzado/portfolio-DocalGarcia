@@ -1,4 +1,8 @@
-@import url(../base/_variables.scss);
+@import "../base/_variables.scss";
+@import "../base/maps";
+@import "../base/extends";
+@import "../base/mixins";
+@import "../base/generales";
 
 /*---- MEDIAS QUERIES ----*/
 @media screen and (max-width: 1455px) {
@@ -23,29 +27,31 @@
     }
 }
 @media screen and (max-width: 1165px) {
-    .biografiaPrincipal img{
-        height: 40%;
-        width: 40%;
-        margin-left: 15%;
-        margin-right: 50px;
-        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    .biografiaPrincipal{
+        img{
+            height: 40%;
+            width: 40%;
+            margin-left: 15%;
+            margin-right: 50px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+        }
         h2{
             color: rgb(44, 44, 44);
             text-align: left;
-            font-size: 40px;
+            font-size: 38px;
             font-weight: 300;
             margin-right: 200px;
             margin-bottom: 20px;
         }
         p{
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 100;
             margin-right: 200px;
         }
     }
 }
 @media screen and (max-width: 1100px) {
-    .biografiaPrincipal img{
+    .biografiaPrincipal{
         height: 100%;
         display: flex;
         flex-direction: column-reverse;
@@ -78,6 +84,13 @@
         }
     }
 }
+@media screen and (max-width: 1050px){
+    footer{
+        iframe{
+            width: 200px;
+        }
+    }
+}
 @media screen and (max-width: 990px){
     .ultimosProyectos{
         width: 100%;
@@ -86,23 +99,66 @@
         margin-bottom: 100px;
         background-image: linear-gradient(to top, white, rgba(158, 153, 153, 0.646));
     }
-}
-@media screen and (max-width: 990px){
     .biografiaPrincipal img{
         height: 60%;
         width: 60%;
     }
 }
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 950px) {
+    footer{
+        iframe{
+            width: 175px;
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    footer{
+        iframe{
+            width: 150px;
+        }
+    }
+}
+@media screen and (max-width: 850px) {
     footer{
         iframe{
             display: none;
         }
     }
+}
+@media screen and (max-width: 685px) {
+    footer{
+        ul{
+            li{
+                margin: 5px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 670px) {
     .biografiaPrincipal{
         img{
             height: 70%;
             width: 70%;
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    footer{
+        justify-content: space-around;
+        ul{
+            display: none;
+        }
+        div{
+            a{
+                img{
+                    height: 45px;
+                    width: 45px;
+                    transition: o0.5s;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+            }
         }
     }
 }
