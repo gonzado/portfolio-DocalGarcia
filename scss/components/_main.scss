@@ -56,7 +56,7 @@
 /*---- BIOGRAFÍA ----*/
 .biografiaPrincipal{
     height: 100%;
-    @include flex (flex, center, center)
+    @include flex (flex, center, center){
     background-image: linear-gradient(to bottom, white, #EAE3D2);
     padding: 50px 30px;
     img{
